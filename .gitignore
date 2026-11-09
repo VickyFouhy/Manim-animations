@@ -1,0 +1,18 @@
+# Rendered output: videos are not stored in this repo, re-render them from scenes/ and slides/
+media/
+*.mp4
+*.mov
+*.gif
+# Manim Slides output (re-render and export from slides/*.py)
+slides/slides/
+slides/*.html
+
+# Arm images for the sarcomere animation: Canva, so kept locally only (the scene runs without them)
+scenes/assets/arm_*.png
+
+# Jupyter and Python clutter
+.ipynb_checkpoints/
+__pycache__/
+
+# macOS
+.DS_Store
