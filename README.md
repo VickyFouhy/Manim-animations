@@ -61,7 +61,7 @@ Add `-s` to render only the last frame as a still image, which is useful for che
 
 | File | Topic | Scene | On the website |
 |---|---|---|---|
-| `slides/action_potential_slides.py` | Nerve impulses | `ActionPotentialSlides` | Nerve Impulses page (`static/animations/action-potential.html` in BiologyNotes) |
+| `slides/action_potential_slides.py` | Nerve impulses | `ActionPotentialSlides` | Nerve Impulses page |
 | `slides/synapse_slides.py` | Neuromuscular junction | `SynapseSlides` | Not yet |
 
 `synapse_slides.py` reuses the animation in `scenes/synapse_neuromuscular_junction.py` (black background), so changes to that scene show up in both.
@@ -75,8 +75,4 @@ manim-slides render -qm action_potential_slides.py ActionPotentialSlides
 manim-slides convert --one-file -ccontrols=true -cprogress=true -cslide_number=true ActionPotentialSlides action-potential.html
 ```
 
-`-ccontrols=true` shows the on-screen arrows (they're off by default). Copy the HTML into BiologyNotes at `static/animations/`. To try changes on the site first, put it in `static/_test/`, which BiologyNotes git-ignores. The rendered clips (`slides/slides/`) and exported HTML are git-ignored here.
-
-## Images
-
-The sarcomere animation can show an arm contracting, using two images (`scenes/assets/arm_s.png` and `arm_f.png`). They are from Canva, so they are not included here. Without them, the animation runs as normal with no arm.
+`-ccontrols=true` shows the on-screen arrows (they're off by default). The rendered clips (`slides/slides/`) and exported HTML are git-ignored here.

@@ -7,7 +7,7 @@ media/
 slides/slides/
 slides/*.html
 
-# Arm images for the sarcomere animation: Canva, so kept locally only (the scene runs without them)
+# Arm images for the sarcomere animation: kept locally only (the scene runs without them)
 scenes/assets/arm_*.png
 
 # Jupyter and Python clutter

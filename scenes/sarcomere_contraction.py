@@ -9,7 +9,7 @@ Render (from the repo folder, in the manim-env environment):
 from manim import *
 from pathlib import Path
 
-# Optional arm images live in scenes/assets/ (see the README: Canva images, not included)
+# Optional arm images live in scenes/assets/ (not included in the repo)
 ASSETS = Path(__file__).resolve().parent / "assets"
 
 class Sarcomere_Contraction(Scene):
@@ -174,7 +174,7 @@ class Sarcomere_Contraction(Scene):
         # =========================
         path_relaxed    = ASSETS / "arm_s.png"
         path_contracted = ASSETS / "arm_f.png"
-        # The arm images aren't in the public repo (Canva): without them, the arm is skipped
+        # If the arm images aren't there, the arm is skipped
         show_arm = path_relaxed.exists() and path_contracted.exists()
 
         if show_arm:
